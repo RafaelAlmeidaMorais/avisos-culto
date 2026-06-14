@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: aviso-veiculo-overlay
+    env: python
+    buildCommand: ""
+    startCommand: "python3 server.py"
+    envVars:
+      - key: ADMIN_KEY
+        sync: false
